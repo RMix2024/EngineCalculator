@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EngineMasterCalculatorApp.InjectorCalculator"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundImageSource="/Resources/Images/coolbackround.jpg"
+    Title="InjectorCalculator"
+    Shell.BackgroundColor="Blue">
+    <Grid>
+        <Image Source="coolbackround.jpg"
+               Aspect="AspectFill"               
+               />
+
+        <ScrollView>
+            <VerticalStackLayout
+            Margin="10"
+            Spacing="25"
+            VerticalOptions="Center">
+                <Label
+                FontAttributes="Bold"
+                FontSize="25"
+                TextColor="#cccccc"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                Text="HorsePower"/>
+                
+                <Entry
+                x:Name="DesiredHorsepower"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Horsepower Goal here"
+                PlaceholderColor="#7c7c7c"
+                WidthRequest="250" 
+                VerticalOptions="Center"
+                TextColor="#cccccc" />
+
+                <Label
+                FontAttributes="Bold"
+                FontSize="25"
+                TextColor="#cccccc"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                Text="Cylinders in Engine"/>
+                
+                <Entry
+                x:Name="CylinderCount"
+                WidthRequest="250" 
+                VerticalOptions="Center"                
+                BackgroundColor="#2a2a2a"
+                Placeholder="Engine Cylinder Count (ie 4,6,8)"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                
+                <Label
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="The BSFC of build"
+                TextColor="#cccccc"
+                VerticalOptions="Center"
+                WidthRequest="250" 
+                 />
+                <Entry
+                x:Name="BSFC"
+                 WidthRequest="250" 
+                BackgroundColor="#2a2a2a"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" 
+                Placeholder="Enter Your BSFC (ie. .50 for N/A)"/>
+
+                <Button
+                WidthRequest="250" 
+                VerticalOptions="Center"
+                BackgroundColor="#0078d4"
+                Clicked="Button_Clicked"
+                TextColor="White" 
+                Text="Calculate"/>
+
+                <Label
+                WidthRequest="250" 
+                FontAttributes="Bold"
+                FontSize="25"
+                TextColor="#cccccc"
+                VerticalOptions="Center" 
+                Text="Required Injector Size"/>
+                
+                <Entry
+                WidthRequest="250" 
+                VerticalOptions="Center"
+                x:Name="InjectorSizeCC"
+                BackgroundColor="#2a2a2a"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" 
+                Placeholder="Your Injector Size cc/min"/>
+                
+                <Entry
+                x:Name="InjectorSizeLBS"
+                WidthRequest="250" 
+                VerticalOptions="Center"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Your Injector Size lb/hr"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

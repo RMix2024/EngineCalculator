@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="True"
+             Shell.BackgroundColor="Blue"
+             x:Class="EngineMasterCalculatorApp.MainPage">
+
+    <Grid>
+        <Image Source="coolbackround.jpg"
+               Aspect="AspectFill"               
+               />
+        <ScrollView>
+            <VerticalStackLayout
+         Padding="30,0"
+         Spacing="25"
+         VerticalOptions="CenterAndExpand">
+
+                <Button 
+            WidthRequest="240"            
+             BackgroundColor="#0078d4"                
+             Clicked="InjectorSizeCalculator_OnClicked"
+             Text="Injector Size Calculator"
+             TextColor="White" />
+                <Button 
+             WidthRequest="240" 
+             BackgroundColor="#0078d4"
+             Clicked="CarburetorCalculator_OnClicked"
+             Text="Carburetor Size Calculator"
+             TextColor="White" />
+                <Button
+             WidthRequest="240" 
+             BackgroundColor="#0078d4"
+             Clicked="FuelPumpSizeCalculator_OnClicked"
+             Text="Fuel Pump Size Calculator"
+             TextColor="White" />
+                <Button
+             WidthRequest="240" 
+             BackgroundColor="#0078d4"
+             Clicked="CompressionRatioCalculator_OnClicked"
+             Text="Compression Ratio Calculator"
+             TextColor="White" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

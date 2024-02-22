@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EngineMasterCalculatorApp.CompressionRatioCalculator"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Compression Ratio Calculator"
+    BackgroundImageSource="/Resources/Images/coolbackround.jpg"
+    Shell.BackgroundColor="Blue">
+    <Grid>
+        <Image Source="coolbackround.jpg"
+               Aspect="AspectFill"               
+               />
+
+        <ScrollView>
+            <VerticalStackLayout
+            Margin="10"
+            Spacing="25"
+            VerticalOptions="Center">
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Cylinder bore"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250"
+                x:Name="CylinderBore"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Enter the Cylinder Bore in inches"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Engine Stroke"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250"
+                x:Name="EngineStroke"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Enter Engine Stroke here in inches"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="Combustion Chamber Size"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250"
+                x:Name="CombustionChamberSize"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Combustion chamber size in cc"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Piston dish in cc"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250"
+                x:Name="PistonDish"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Enter piston dish size here "
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Deck Clearance"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250"
+                x:Name="DeckClearance"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Deck Clearance in inches (ie .030) "
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Head Gasket bore "
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250"
+                x:Name="HeadGasketBore"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Head gasket bore in inches (ie 4.070)"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Head Gasket Thickness in inches"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250"
+                x:Name="HeadGasketThickness"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Enter head gasket thickness inches "
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+
+                <Label
+                WidthRequest="250"
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Compression Ratio"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Button
+                WidthRequest="250"
+                BackgroundColor="#0078d4"
+                Clicked="Button_Clicked"
+                Text="Calculate"
+                TextColor="White" />
+                <Entry
+                WidthRequest="250"
+                x:Name="CompressionRatio"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Compression Ratio"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EngineMasterCalculatorApp.CarburetorCalculator"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Carburetor Calculator"
+    BackgroundImageSource="/Resources/Images/coolbackround.jpg"
+    Shell.BackgroundColor="Blue">
+    <Grid>
+        <Image Source="coolbackround.jpg"
+               Aspect="AspectFill"               
+               />
+
+        <ScrollView>
+            <VerticalStackLayout
+            Margin="10"
+            Spacing="25"
+            VerticalOptions="Center">
+                <Label
+                WidthRequest="250" 
+
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Engine Displacement"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250" 
+                x:Name="EngineDisplacement"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Displacement in Ci (ie. 454 )"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                <Label
+                WidthRequest="250" 
+                FontAttributes="Bold"
+                FontSize="25"
+                Text="Engine Max RPM"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250" 
+                x:Name="MaxRpm"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Enter Maximum RPM (ie. Rev Limiter)"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+                <Button
+                WidthRequest="250" 
+                BackgroundColor="#0078d4"
+                Clicked="Button_Clicked"
+                Text="Calculate"
+                TextColor="White" />
+                <Label
+                WidthRequest="250" 
+                FontAttributes="Bold"
+                FontSize="30"
+                Text="Carburetor Size"
+                TextColor="#cccccc"
+                VerticalOptions="Center" />
+                <Entry
+                WidthRequest="250" 
+                x:Name="CarburetorSize"
+                BackgroundColor="#2a2a2a"
+                Placeholder="Your Recomended Carburetor Size"
+                PlaceholderColor="#7c7c7c"
+                TextColor="#cccccc" />
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
