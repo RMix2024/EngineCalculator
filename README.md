@@ -17,7 +17,7 @@
 ## Platforms
 - **Android**: Download the `.apk` file directly from this repository or install it on your Android device.  
   *[Learn how to install .apk files here](https://www.lifewire.com/install-apk-on-android-4177185).*
-- **iOS**: Available on the [App Store](#) *(insert the app's App Store link)*.
+- **iOS**: Available on the [App Store](#) *(https://apps.apple.com/fi/app/automotive-master-calculator/id6478249857)*.
 
 ---
 
